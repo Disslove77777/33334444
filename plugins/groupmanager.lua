@@ -70,7 +70,7 @@ do
             L_name = 'yes',
             L_photo = 'no',
             L_member = 'no',
-            anti_flood = 'ban',
+            an = 'ban',
             welcome = 'group',
             sticker = 'ok',
             }
@@ -224,9 +224,9 @@ do
             elseif settings.L_member == 'no' then
               L_member_state = '🔓'
             end
-            if settings.anti_flood ~= 'no' then
+            if settings.an ~= 'no' then
               antispam_state = '🔒'
-            elseif settings.anti_flood == 'no' then
+            elseif settings.an == 'no' then
               antispam_state = '🔓'
             end
             if settings.welcome ~= 'no' then
@@ -244,7 +244,7 @@ do
                   ..'\n'..L_name_state..' L group name : '..settings.L_name
                   ..'\n'..L_photo_state..' L group photo : '..settings.L_photo
                   ..'\n'..L_member_state..' L group member : '..settings.L_member
-                  ..'\n'..antispam_state..' Spam and Flood protection : '..settings.anti_flood
+                  ..'\n'..antispam_state..' Spam and Flood protection : '..settings.an
                   ..'\n'..sticker_state..' Sticker policy : '..settings.sticker
                   ..'\n'..greeting_state..' Welcome message : '..settings.welcome
             return text
